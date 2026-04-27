@@ -90,6 +90,9 @@ form{
     color: white;
     font-weight: 600;
 }
+#button1:hover{
+    background-color: rgb(218, 171, 85);
+}
 .back{
     position: absolute;
     width: 50%;
@@ -117,6 +120,7 @@ form{
     z-index: 2;
 }
 #button2{
+    display: flex;
     z-index: 2;
     width: 160px;
     height: 46px;
@@ -128,7 +132,14 @@ form{
     font-size: 16px;
     color: white;
     font-weight: 600;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
+#button2:hover{
+    background: rgb(218, 171, 85);
+}
+
 @media(max-width: 600px) {
     .container{
         height: 100vh;
