@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <?php
 define('ACCESS_ALLOWED', true);
 require_once '../config/database.php';
@@ -93,3 +94,5 @@ foreach ($rows as $row) {
 
 <?php include 'partials/admin_footer.php'; ?>
 
+=======
+>>>>>>> ba5da9f0dc6af51688bdd8bfdbfbd1ccf8e3c6f0
