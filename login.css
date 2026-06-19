@@ -1,0 +1,172 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: lightblue;
+ }
+
+ .container{
+    position: relative;
+    width: 850px;
+    height: 550px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    overflow: hidden;
+
+ }
+.formbox{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px ;
+    z-index: 1;
+ 
+}
+
+form{
+    width: 100%;
+}
+.container h1{
+    font-size: 36px;
+    margin: -10px 0 ;
+}
+.box{
+    position: relative;
+    margin: 36px 0;
+}
+.box input{
+    width: 100%;
+    padding: 13px;
+    background: #eee;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+.box input::placeholder{
+    color: #888;
+    font-weight: 400;
+}
+.remember-forgot{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+.remember-forgot a{
+    font-size: 14.5px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+#button1{
+    width: 100%;
+    height: 48px;
+    background: #00AD83;
+    border-radius: 8px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+#button1:hover{
+    background-color: rgb(218, 171, 85);
+}
+.back{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    /* background-color: seagreen; */
+    text-align: center;
+}
+.back::before{
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    background: #00AD83;
+    z-index: 2;
+    left: -200%;
+    border-radius: 150px;
+}
+.back h1{
+    margin-bottom: 20px;
+    z-index: 2;
+}
+#button2{
+    display: flex;
+    z-index: 2;
+    width: 160px;
+    height: 46px;
+    background: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+#button2:hover{
+    background: rgb(218, 171, 85);
+}
+
+@media(max-width: 600px) {
+    .container{
+        height: 100vh;
+    }
+
+    .formbox{
+        width: 100%;
+        height: 70%;
+        bottom: 0;
+    }
+
+    .back{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+    }
+
+    .back::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #00AD83;
+        border-radius: 0 0 150px 150px;
+    }  
+ } 
